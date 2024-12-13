@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Login System</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <section>
+        <header class="text-center pt-3 fixed-top">
+           
+                <h2 class="mb-0 text-white">Registiration Page</h2>
+          
+        </header>
+        <div class="container min-vh-100">
+            <form class="w-75 mx-auto mb-5 text-white-50 p-5 pb-2 rounded-3">
+                <h2 class="text-white mb-4">Enter your registeration credentials:</h2>
+                <div class="mb-3 w-100">
+                    <label for="userName" class="form-label">Name:</label>
+                    <input type="text" oninput="validateInputs(this,'msgName')" class="form-control" id="userName">
+                    <p id="msgName" class="alert alert-danger p-1 small w-100 d-none">
+                        It must start with a letter, be 3 to 20 characters long, and can
+                        only contain letters, numbers, hyphens, or underscores.
+                      </p>
+                </div>
+                <div class="mb-3">
+                    <label for="userEmail" class="form-label">Email:</label>
+                    <input type="email"oninput="validateInputs(this,'msgEmail')" class="form-control" id="userEmail">
+                    <p id="msgEmail" class="alert alert-danger p-1 small w-100 d-none">
+                        must start name@ and ends with .com or .net etc...
+                      </p>
+                </div>
+                <div class="mb-3">
+                    <label for="userPassword" class="form-label">Password:</label>
+                    <input type="password"oninput="validateInputs(this,'msgPass')" class="form-control" id="userPassword">
+                    <p id="msgPass" class="alert alert-danger p-1 small w-100 d-none">
+                        must contain capital letter , numbers , special characters.
+                      </p>
+                </div>
+                <button type="submit" class="btn btn-aqua m-auto" id="registerBtnn">Register</button>
+                <p id="successMsg" class="bg-success my-2 text-capitalize text-white p-2 rounded-2 d-none">Success, Redirecting to Login page!</p>
+                <p id="errorMsg" class="alert alert-danger my-2 text-capitalize d-none p-2 rounded-2">Email Already Exists!</p>
+                <p class="my-2 text-center">Already Regsitered? <a href="../sign_in/login.html" class="btn btn-success">Login Now</a></p>
+            </form>
+        </div>
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/signup.js"></script>
+</body>
+
+</html>

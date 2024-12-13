@@ -1,0 +1,26 @@
+
+
+.card {
+    background-color: rgba(72, 166, 125, 0.302);
+    color: white;
+}
+
+.container {
+    padding-top: 100px;
+}
+
+body {
+    background-image: linear-gradient(to right,rgb(0, 128, 105),white);
+    font-family: 'Fredoka One', cursive;
+}
+
+.btn-aqua{
+    background-color: white;
+    color: rgb(18, 50, 50);
+ }
+ 
+
+#welcomeMessage{
+    font-size: 3.125rem;
+}
+

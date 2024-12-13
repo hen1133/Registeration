@@ -1,0 +1,53 @@
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Login System</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+   
+    <section>
+        <header class="fixed-top">
+            <div class="container py-4 d-flex justify-content-center">
+                <h2 class="mb-0 text-white">Smart Login System</h2>
+            </div>
+        </header>
+        <div class="container min-vh-100">
+            <form class="w-75 mx-auto mb-5 text-white-50  p-5 pb-2 rounded-3">
+                <h2 class="text-white mb-4">Enter your login credentials:</h2>
+                <div class="mb-3">
+                    <label for="userEmail" class="form-label">Email:</label>
+                    <input type="email"oninput="validateInputs(this,'msgEmail')"  class="form-control" id="userEmail">
+                    <p id="msgEmail" class="alert alert-danger p-1 small w-100 d-none">
+                        must start name@ and ends with .com or .net etc...
+                      </p>
+                </div>
+                <div class="mb-3">
+                    <label for="userPassword" class="form-label">Password:</label>
+                    <input type="password"oninput="validateInputs(this,'msgPass')" class="form-control" id="userPassword">
+                    <p id="msgPass" class="alert alert-danger p-1 small w-100 d-none">
+                        must contain capital letter , numbers , special characters.
+                      </p>
+                </div>
+                <button type="button" class="btn btn-aqua" id="loginBtn">Login</button>
+                <p id="successMsg" class="bg-success my-2 text-capitalize text-white p-2 rounded-2 d-none">Success,
+                    Redirecting to Home Page!</p>
+                <p id="errorMsg" class="alert alert-danger my-2 text-capitalize d-none p-2 rounded-2">Invalid Email or Password!</p>
+                <p class="my-2 text-center">Don't have an account? <a href="../sign-up/index.html" class="btn btn-success">Register
+                        Now</a></p>
+            </form>
+        </div>
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

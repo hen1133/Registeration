@@ -1,0 +1,26 @@
+body {
+    background-image: linear-gradient(to right,rgb(0, 128, 105),white);
+    font-family: 'Fredoka One', cursive;
+}
+
+form{
+    background-color: rgba(18, 59, 57, 0.253);
+}
+
+.container {
+    padding-top: 100px;
+}
+
+
+.btn-aqua{
+   background-color: white;
+   color: rgb(18, 50, 50);
+}
+
+
+/* @media (min-width: 300px) { 
+    form{
+        width: 500px !important ;
+        background-color: black;
+    }
+ }  */
